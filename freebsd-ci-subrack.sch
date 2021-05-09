@@ -609,4 +609,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 5800 5000 5800
 Connection ~ 4850 5300
+Text Notes 2600 6000 0    50   ~ 0
+See ON Semi app note 9093/D
 $EndSCHEMATC
