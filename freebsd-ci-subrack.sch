@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x10_Row_Letter_First J?
+U 1 1 60983C54
+P 2100 1900
+F 0 "J?" H 2150 2450 50  0000 C CNN
+F 1 "Conn_02x10_Row_Letter_First" H 2100 1250 50  0000 C CNN
+F 2 "" H 2100 1900 50  0001 C CNN
+F 3 "~" H 2100 1900 50  0001 C CNN
+	1    2100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60985629
+P 1850 1450
+F 0 "#PWR?" H 1850 1300 50  0001 C CNN
+F 1 "+12V" H 1865 1623 50  0000 C CNN
+F 2 "" H 1850 1450 50  0001 C CNN
+F 3 "" H 1850 1450 50  0001 C CNN
+	1    1850 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1500 1850 1500
+Wire Wire Line
+	1850 1500 1850 1450
+$Comp
+L power:+12V #PWR?
+U 1 1 60986720
+P 2450 1450
+F 0 "#PWR?" H 2450 1300 50  0001 C CNN
+F 1 "+12V" H 2465 1623 50  0000 C CNN
+F 2 "" H 2450 1450 50  0001 C CNN
+F 3 "" H 2450 1450 50  0001 C CNN
+	1    2450 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1500 2450 1500
+Wire Wire Line
+	2450 1500 2450 1450
+$Comp
+L power:+5V #PWR?
+U 1 1 60986CBB
+P 1600 1450
+F 0 "#PWR?" H 1600 1300 50  0001 C CNN
+F 1 "+5V" H 1615 1623 50  0000 C CNN
+F 2 "" H 1600 1450 50  0001 C CNN
+F 3 "" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1450 1600 1600
+Wire Wire Line
+	1600 1700 1900 1700
+Wire Wire Line
+	1600 1600 1900 1600
+Connection ~ 1600 1600
+Wire Wire Line
+	1600 1600 1600 1700
+Text GLabel 1800 1800 0    50   Input ~ 0
+USB_D+
+Wire Wire Line
+	1800 1800 1900 1800
+Text GLabel 1800 1900 0    50   Input ~ 0
+USB_D-
+Wire Wire Line
+	1800 1900 1900 1900
+$Comp
+L power:VBUS #PWR?
+U 1 1 60987B29
+P 2800 1900
+F 0 "#PWR?" H 2800 1750 50  0001 C CNN
+F 1 "VBUS" H 2815 2073 50  0000 C CNN
+F 2 "" H 2800 1900 50  0001 C CNN
+F 3 "" H 2800 1900 50  0001 C CNN
+	1    2800 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1900 2800 1900
+$Comp
+L power:GND #PWR?
+U 1 1 60988876
+P 2600 1600
+F 0 "#PWR?" H 2600 1350 50  0001 C CNN
+F 1 "GND" H 2605 1427 50  0000 C CNN
+F 2 "" H 2600 1600 50  0001 C CNN
+F 3 "" H 2600 1600 50  0001 C CNN
+	1    2600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1600 2450 1600
+Wire Wire Line
+	2450 1600 2450 1700
+Wire Wire Line
+	2450 1800 2400 1800
+Connection ~ 2450 1600
+Wire Wire Line
+	2450 1600 2600 1600
+Wire Wire Line
+	2400 1700 2450 1700
+Connection ~ 2450 1700
+Wire Wire Line
+	2450 1700 2450 1800
+$EndSCHEMATC
