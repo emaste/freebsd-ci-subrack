@@ -387,28 +387,6 @@ $EndComp
 Wire Wire Line
 	2950 4600 2950 4650
 $Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 609C94BD
-P 1850 5150
-F 0 "Q?" H 2054 5196 50  0000 L CNN
-F 1 "2N7002" H 2054 5105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2050 5075 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1850 5150 50  0001 L CNN
-	1    1850 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 609CBBCB
-P 1950 5400
-F 0 "#PWR?" H 1950 5150 50  0001 C CNN
-F 1 "GND" H 1955 5227 50  0000 C CNN
-F 2 "" H 1950 5400 50  0001 C CNN
-F 3 "" H 1950 5400 50  0001 C CNN
-	1    1950 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 609CDBB7
 P 2700 5200
@@ -453,20 +431,14 @@ Connection ~ 2450 4900
 $Comp
 L Device:R R?
 U 1 1 609D742E
-P 2200 4900
-F 0 "R?" V 2100 4900 50  0000 C CNN
-F 1 "10K" V 2200 4900 50  0000 C CNN
-F 2 "" V 2130 4900 50  0001 C CNN
-F 3 "~" H 2200 4900 50  0001 C CNN
-	1    2200 4900
+P 2200 5200
+F 0 "R?" V 2100 5200 50  0000 C CNN
+F 1 "10K" V 2200 5200 50  0000 C CNN
+F 2 "" V 2130 5200 50  0001 C CNN
+F 3 "~" H 2200 5200 50  0001 C CNN
+	1    2200 5200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2050 4900 1950 4900
-Wire Wire Line
-	1950 4900 1950 4950
-Wire Wire Line
-	1950 5350 1950 5400
 $Comp
 L Device:LED D?
 U 1 1 609FAB2B
@@ -579,23 +551,8 @@ $EndComp
 Wire Wire Line
 	9250 1050 9250 1150
 Connection ~ 9250 1150
-Text GLabel 1150 5150 0    50   Input ~ 0
+Text GLabel 1000 5200 0    50   Input ~ 0
 PWRON
-$Comp
-L Device:R R?
-U 1 1 60A711D5
-P 1400 5150
-F 0 "R?" V 1300 5150 50  0000 C CNN
-F 1 "10K" V 1400 5150 50  0000 C CNN
-F 2 "" V 1330 5150 50  0001 C CNN
-F 3 "~" H 1400 5150 50  0001 C CNN
-	1    1400 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1550 5150 1650 5150
-Wire Wire Line
-	1150 5150 1250 5150
 Text GLabel 4750 4700 0    50   Input ~ 0
 +5V_SW
 Wire Wire Line
@@ -611,4 +568,66 @@ Wire Wire Line
 Connection ~ 4850 5300
 Text Notes 2600 6000 0    50   ~ 0
 See ON Semi app note 9093/D
+$Comp
+L 74xGxx:SN74LVC1G14DBV U?
+U 1 1 60A853C9
+P 1300 5200
+F 0 "U?" H 1400 5350 50  0000 L CNN
+F 1 "SN74LVC1G14DBV" H 1400 5050 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1300 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf" H 1300 5200 50  0001 C CNN
+	1    1300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5200 1100 5200
+$Comp
+L Device:D D?
+U 1 1 60A911C4
+P 2200 4900
+F 0 "D?" H 2200 4800 50  0000 C CNN
+F 1 "D" H 2100 4950 50  0000 C CNN
+F 2 "" H 2200 4900 50  0001 C CNN
+F 3 "~" H 2200 4900 50  0001 C CNN
+	1    2200 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 5200 2450 5200
+Connection ~ 2450 5200
+Wire Wire Line
+	2050 5200 1950 5200
+Wire Wire Line
+	1950 5200 1950 4900
+Wire Wire Line
+	1950 4900 2050 4900
+Wire Wire Line
+	1600 5200 1950 5200
+Connection ~ 1950 5200
+$Comp
+L power:+5V #PWR?
+U 1 1 60AA2B40
+P 1300 4900
+F 0 "#PWR?" H 1300 4750 50  0001 C CNN
+F 1 "+5V" H 1315 5073 50  0000 C CNN
+F 2 "" H 1300 4900 50  0001 C CNN
+F 3 "" H 1300 4900 50  0001 C CNN
+	1    1300 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5000 1300 4900
+$Comp
+L power:GND #PWR?
+U 1 1 60AA5425
+P 1300 5500
+F 0 "#PWR?" H 1300 5250 50  0001 C CNN
+F 1 "GND" H 1305 5327 50  0000 C CNN
+F 2 "" H 1300 5500 50  0001 C CNN
+F 3 "" H 1300 5500 50  0001 C CNN
+	1    1300 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5500 1300 5400
 $EndSCHEMATC
