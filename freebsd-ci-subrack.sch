@@ -630,4 +630,60 @@ F 3 "" H 1300 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 5500 1300 5400
+$Comp
+L 74xGxx:74LVC1G17 U?
+U 1 1 60AADB57
+P 8700 3550
+F 0 "U?" H 8800 3700 50  0000 C CNN
+F 1 "74LVC1G17" H 8950 3450 50  0000 C CNN
+F 2 "" H 8700 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8700 3550 50  0001 C CNN
+	1    8700 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8850 3100 2    50   Input ~ 0
++5V_TGT
+Wire Wire Line
+	8700 3450 8700 3100
+Wire Wire Line
+	8700 3100 8850 3100
+$Comp
+L power:GND #PWR?
+U 1 1 60AB1679
+P 8700 3900
+F 0 "#PWR?" H 8700 3650 50  0001 C CNN
+F 1 "GND" H 8705 3727 50  0000 C CNN
+F 2 "" H 8700 3900 50  0001 C CNN
+F 3 "" H 8700 3900 50  0001 C CNN
+	1    8700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3650 8700 3900
+Text GLabel 6000 1350 2    50   Input ~ 0
+URx
+Text GLabel 6000 1450 2    50   Input ~ 0
+UTx
+Wire Wire Line
+	5900 1450 6000 1450
+Wire Wire Line
+	5900 1350 6000 1350
+Text GLabel 8300 3550 0    50   Input ~ 0
+UTx
+Wire Wire Line
+	8300 3550 8400 3550
+Text Label 9450 3550 0    50   ~ 0
+TX_TO_TARGET
+Wire Wire Line
+	8950 3550 9450 3550
+Text GLabel 8300 4350 0    50   Input ~ 0
+URx
+Text Label 9400 4350 0    50   ~ 0
+RX_FROM_TARGET
+Wire Wire Line
+	8300 4350 9400 4350
+Text GLabel 6000 2050 2    50   Input ~ 0
+TGT_RST
+Wire Wire Line
+	5900 2050 6000 2050
 $EndSCHEMATC
