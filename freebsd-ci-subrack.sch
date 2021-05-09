@@ -25,36 +25,6 @@ F 3 "~" H 1550 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
-U 1 1 60985629
-P 1300 1350
-F 0 "#PWR?" H 1300 1200 50  0001 C CNN
-F 1 "+12V" H 1315 1523 50  0000 C CNN
-F 2 "" H 1300 1350 50  0001 C CNN
-F 3 "" H 1300 1350 50  0001 C CNN
-	1    1300 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 1400 1300 1400
-Wire Wire Line
-	1300 1400 1300 1350
-$Comp
-L power:+12V #PWR?
-U 1 1 60986720
-P 1900 1350
-F 0 "#PWR?" H 1900 1200 50  0001 C CNN
-F 1 "+12V" H 1915 1523 50  0000 C CNN
-F 2 "" H 1900 1350 50  0001 C CNN
-F 3 "" H 1900 1350 50  0001 C CNN
-	1    1900 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 1400 1900 1400
-Wire Wire Line
-	1900 1400 1900 1350
-$Comp
 L power:+5V #PWR?
 U 1 1 60986CBB
 P 1050 1350
@@ -686,4 +656,10 @@ Text GLabel 6000 2050 2    50   Input ~ 0
 TGT_RST
 Wire Wire Line
 	5900 2050 6000 2050
+NoConn ~ 1350 1400
+NoConn ~ 1850 1400
+Text Notes 1900 1400 0    50   ~ 0
+12V
+Text Notes 1300 1400 2    50   ~ 0
+12V
 $EndSCHEMATC
