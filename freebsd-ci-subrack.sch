@@ -1877,4 +1877,92 @@ Wire Wire Line
 	7250 5950 7300 5950
 Text Notes 11800 5750 0    50   ~ 0
 - 98243 for compatibity with L41 design\n- TMP411 for remote sensor\n- LM75B for availability
+Text Notes 8650 6250 0    50   ~ 0
+0x18, 0x50, 0x30\n
+Text Notes 7200 6450 0    50   ~ 0
+A/E 100 1100\nB    100 1101\nC    100 1110
+Text Notes 10500 6350 0    50   ~ 0
+100 1xxx
+$Comp
+L power:GND #PWR?
+U 1 1 60D5940E
+P 8100 6000
+F 0 "#PWR?" H 8100 5750 50  0001 C CNN
+F 1 "GND" H 8105 5827 50  0000 C CNN
+F 2 "" H 8100 6000 50  0001 C CNN
+F 3 "" H 8100 6000 50  0001 C CNN
+	1    8100 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 6000 8100 5950
+Wire Wire Line
+	8100 5950 8150 5950
+Wire Wire Line
+	8100 5950 8100 5850
+Wire Wire Line
+	8100 5850 8150 5850
+Connection ~ 8100 5950
+Wire Wire Line
+	8100 5850 8100 5750
+Wire Wire Line
+	8100 5750 8150 5750
+Connection ~ 8100 5850
+Text Notes 8500 6850 0    50   ~ 0
+001 1xxx\n101 0xxx\n011 0xxx
+Text Notes 2200 5450 0    50   ~ 0
+100 0000 - 100 1111\n
+Text Notes 10500 6450 0    50   ~ 0
+0x48
+$Comp
+L power:GND #PWR?
+U 1 1 60D90478
+P 10750 5850
+F 0 "#PWR?" H 10750 5600 50  0001 C CNN
+F 1 "GND" H 10755 5677 50  0000 C CNN
+F 2 "" H 10750 5850 50  0001 C CNN
+F 3 "" H 10750 5850 50  0001 C CNN
+	1    10750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 5850 10750 5800
+Wire Wire Line
+	10750 5600 10700 5600
+Wire Wire Line
+	10700 5700 10750 5700
+Connection ~ 10750 5700
+Wire Wire Line
+	10750 5700 10750 5600
+Wire Wire Line
+	10700 5800 10750 5800
+Connection ~ 10750 5800
+Wire Wire Line
+	10750 5800 10750 5700
+$Comp
+L power:GND #PWR?
+U 1 1 60DC427E
+P 2550 5150
+F 0 "#PWR?" H 2550 4900 50  0001 C CNN
+F 1 "GND" H 2555 4977 50  0000 C CNN
+F 2 "" H 2550 5150 50  0001 C CNN
+F 3 "" H 2550 5150 50  0001 C CNN
+	1    2550 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5100 2550 5100
+Wire Wire Line
+	2550 5100 2550 5150
+Wire Wire Line
+	2400 5000 2550 5000
+Wire Wire Line
+	2550 5000 2550 5100
+Connection ~ 2550 5100
+Text Notes 2200 5550 0    50   ~ 0
+0x40
+Text Notes 7250 6100 0    50   ~ 0
+0x4C/0x4D/0x4E
+Text Notes 3600 5300 0    50   ~ 0
+010 0000 - reserved for I/O expander\n0x20
 $EndSCHEMATC
